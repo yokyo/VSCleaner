@@ -6,14 +6,14 @@
 ##用法
 * 安装 [Python2.7](http://www.python.org)
 * 假设在 D:\VC_PROJECT 目录下放着本地 Visual Studio 的所有工程。那么执行
-    ```Bash
-    >python clean.pyc d:\vc_project
-    ```
+```Bash
+>python clean.pyc d:\vc_project
+```
     所有工程的所有中间文件全部清除。
 * 清除某个工程
-    ```Bash
-    >python clean.pyc d:\vc_project\project1
-    ```
+```Bash
+>python clean.pyc d:\vc_project\project1
+```
 
 ##其他
 
@@ -22,14 +22,14 @@
 
 * 把 clean.py 放到 d:\bin ，同时把 d:\bin 加到环境变量里。
 * 在 d:\bin 下创建 clean.bat 内容如下
-  ```Bash
-  @ECHO OFF
-  python d:\bin\clean.pyc %*
-  ```
+```Bash
+@ECHO OFF
+python d:\bin\clean.pyc %*
+```
 * 在d:\vc_project\project1中打开命令行，执行
-  ```Bash
-  >clean
-  ```
+```Bash
+>clean
+```
   则 project1 中间文件清除干净了。
     
 ##自定义
